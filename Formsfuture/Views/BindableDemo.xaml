@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Formsfuture.Views.BindableDemo" BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout BindableLayout.ItemsSource="{Binding Podcasts}" BackgroundColor="White">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <ContentView Padding="10">
+                        <Label Text="{Binding Name}" />
+                    </ContentView>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

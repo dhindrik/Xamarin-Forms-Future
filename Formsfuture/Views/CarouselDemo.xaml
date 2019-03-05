@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Formsfuture.Views.CarouselDemo" BackgroundColor="White">
+
+
+    <CarouselView ItemsSource="{Binding Podcasts}" HeightRequest="200" BackgroundColor="White">
+        <CarouselView.ItemsLayout>
+            <GridItemsLayout Orientation="Horizontal" SnapPointsAlignment="Center" SnapPointsType="Mandatory" />
+        </CarouselView.ItemsLayout>
+        <CarouselView.ItemTemplate>
+            <DataTemplate>
+              
+                <Grid Padding="10" HeightRequest="120">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.RowSpan="2" Source="{Binding Logo}" WidthRequest="100" HeightRequest="100" VerticalOptions="Start" />
+                    <Label Grid.Column="1" Text="{Binding Name}" FontAttributes="Bold" />
+                    <Label Grid.Column="1" Grid.Row="1" Text="{Binding Description}" VerticalOptions="Start" />
+                </Grid>
+        
+            </DataTemplate>
+        </CarouselView.ItemTemplate>
+    </CarouselView>
+
+</ContentPage>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Formsfuture.Views.VisualDemo" Title="Visual"  BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout Padding="10" BackgroundColor="White">
+            <Entry Visual="Material" />
+            <Entry />
+            <Entry />
+            <Entry />
+            <Entry />
+            <Entry />
+            
+            <Button Text="Navigate" Clicked="Handle_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
