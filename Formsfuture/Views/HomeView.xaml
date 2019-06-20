@@ -3,9 +3,9 @@
              Title="Podcasts" BackgroundColor="White">
     <CollectionView ItemsSource="{Binding Podcasts}" BackgroundColor="White">
     <CollectionView.ItemsLayout>
-    <!--  <GridItemsLayout Orientation="Horizontal"
+    <!--GridItemsLayout Orientation="Vertical"
                         Span="2" />-->
-            <ListItemsLayout>
+         <ListItemsLayout>
             <x:Arguments>
                 <ItemsLayoutOrientation>Vertical</ItemsLayoutOrientation>    
             </x:Arguments>

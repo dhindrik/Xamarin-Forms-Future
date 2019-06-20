@@ -17,8 +17,8 @@ namespace Formsfuture.Views
 
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-            var shell = (Shell)App.Current.MainPage;
-            shell.GoToAsync("app:///Demo/Home/About");
+            
+            Shell.Current.GoToAsync("//home/about");
         }
     }
 }

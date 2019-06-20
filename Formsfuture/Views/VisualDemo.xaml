@@ -5,7 +5,7 @@
         <StackLayout Padding="10" BackgroundColor="White">
             <Entry Visual="Material" />
             <Entry />
-            <Entry />
+            <Entry Visual="" />
             <Entry />
             <Entry />
             <Entry />
